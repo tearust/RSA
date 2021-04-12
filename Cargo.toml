@@ -12,7 +12,7 @@ categories = ["cryptography"]
 readme = "README.md"
 
 [dependencies]
-num-bigint = { git = "https://github.com/tearust/num-bigint", branch = "nitro", features = ["rand", "i128", "u64_digit", "prime", "zeroize"] }
+num-bigint-dig = { git = "https://github.com/tearust/num-bigint", branch = "nitro", features = ["rand", "i128", "u64_digit", "prime", "zeroize"] }
 num-traits = "0.2.6"
 num-integer = "0.1.39"
 num-iter = "0.1.37"
@@ -57,9 +57,9 @@ name = "key"
 
 [features]
 default = ["pem", "rand/std"]
-getrandom = ["rand/getrandom", "num-bigint/std"]
-nitro = ["rand/nitro", "num-bigint/nitro"]
-nightly = ["subtle/nightly", "num-bigint/nightly"]
-serde = ["num-bigint/serde", "serde_crate"]
+getrandom = ["rand/getrandom", "num-bigint-dig/std"]
+nitro = ["rand/nitro", "num-bigint-dig/nitro"]
+nightly = ["subtle/nightly", "num-bigint-dig/nightly"]
+serde = ["num-bigint-dig/serde", "serde_crate"]
 serde1 = ["serde"] # deprecated
 expose-internals = []
