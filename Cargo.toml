@@ -12,7 +12,7 @@ categories = ["cryptography"]
 readme = "README.md"
 
 [dependencies]
-num-bigint = { git = "https://github.com/tearust/num-bigint", branch = "nitro", features = ["rand", "i128", "u64_digit", "prime", "zeroize"], package = "num-bigint-dig" }
+num-bigint = { git = "https://github.com/tearust/num-bigint", branch = "nitro", features = ["rand", "i128", "u64_digit", "prime", "zeroize"] }
 num-traits = "0.2.6"
 num-integer = "0.1.39"
 num-iter = "0.1.37"
